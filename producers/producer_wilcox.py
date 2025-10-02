@@ -66,42 +66,23 @@ def assess_sentiment(text: str) -> float:
 
 def generate_messages():
     """Yield JSON-able dicts forever."""
-    ADJECTIVES = ["amazing", "funny", "boring", "exciting", "weird"]
-    ACTIONS = ["found", "saw", "tried", "shared", "loved"]
-    TOPICS = [
-        "a movie", "a meme", "an app", "a trick", "a story",
-        "Python", "JavaScript", "recipe", "travel", "game",
-    ]
-    AUTHORS = ["Alice", "Bob", "Charlie", "Eve"]
-    KEYWORD_CATEGORIES = {
-        "meme": "humor",
-        "Python": "tech",
-        "JavaScript": "tech",
-        "recipe": "food",
-        "travel": "travel",
-        "movie": "entertainment",
-        "game": "gaming",
-    }
+    TEAMS = ["chiefs", "chargers", "broncos", "raiders", "bills", "patriots", "dolphins", "jets", "steelers", "bengals", "ravens", "browns", "colts", "jaguars", "texans", "titans"]
+    ACTIONS = ["run", "pass"]
+    
 
     while True:
-        adjective = random.choice(ADJECTIVES)
+        offense = random.choice(TEAMS)
         action = random.choice(ACTIONS)
-        topic = random.choice(TOPICS)
-        author = random.choice(AUTHORS)
-        message_text = f"I just {action} {topic}! It was {adjective}."
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        yards = int(random.triangular(low=1, high=50, mode=5))  # Biased toward lower yardage
+        defense = random.choice([team for team in TEAMS if team != offense])
 
-        keyword_mentioned = next((w for w in KEYWORD_CATEGORIES if w in topic), "other")
-        category = KEYWORD_CATEGORIES.get(keyword_mentioned, "other")
-        sentiment = assess_sentiment(message_text)
+        message_text = f"{offense} gained {yards} yards against {defense} with a {action}."
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
         yield {
             "message": message_text,
-            "author": author,
+            "author": "system",
             "timestamp": timestamp,
-            "category": category,
-            "sentiment": sentiment,
-            "keyword_mentioned": keyword_mentioned,
             "message_length": len(message_text),
         }
 
