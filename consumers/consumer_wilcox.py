@@ -1,44 +1,41 @@
-""" consumer_wilcox.py 
+"""
+consumer_wilcox.py
 
-Has the following functions:
-- init_db(config): Initialize the SQLite database and create the 'streamed_messages' table if it doesn't exist.
-- insert_message(message, config): Insert a single processed message into the SQLite database.
-- group messages by category
-- give sentiment score by category
-
-Example JSON message
+Consumes messages from a Kafka topic and stores them in a SQLite database.
+Expected message format:
 {
-    "message": "I just shared a meme! It was amazing.",
-    "author": "Charlie",
-    "timestamp": "2025-01-29 14:35:20",
-    "category": "humor",
-    "sentiment": 0.87,
-    "keyword_mentioned": "meme",
-    "message_length": 42
+    "message": "chiefs gained 7 yards against broncos with a run.",
+    "author": "system",
+    "timestamp": "2025-10-02 18:45:00",
+    "message_length": 54
 }
-
 """
 
 #####################################
 # Import Modules
 #####################################
 
-# import from standard library
 import json
 import os
 import pathlib
 import sqlite3
 import sys
 from kafka import KafkaConsumer
+
+# Local utilities
 import utils.utils_config as config
 from utils.utils_consumer import create_kafka_consumer
 from utils.utils_logger import logger
 from utils.utils_producer import verify_services, is_topic_available
 
 
+#####################################
+# Database Functions
+#####################################
+
 def init_db(db_path: pathlib.Path):
     """
-    Initialize SQLite DB with streamed_messages and sequence tables.
+    Initialize SQLite DB with streamed_messages table.
     """
     logger.info(f"Initializing SQLite DB at {db_path}.")
     try:
@@ -47,32 +44,17 @@ def init_db(db_path: pathlib.Path):
         with sqlite3.connect(db_path) as conn:
             cursor = conn.cursor()
             cursor.execute("DROP TABLE IF EXISTS streamed_messages;")
-            cursor.execute("DROP TABLE IF EXISTS sequence;")
 
-            cursor.execute(
-                """
+            cursor.execute("""
                 CREATE TABLE streamed_messages (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
                     message TEXT,
                     author TEXT,
                     timestamp TEXT,
-                    category TEXT,
-                    sentiment REAL,
-                    keyword_mentioned TEXT,
                     message_length INTEGER
                 )
-                """
-            )
+            """)
 
-            cursor.execute(
-                """
-                CREATE TABLE sequence (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    category TEXT UNIQUE,
-                    avg_sentiment REAL
-                )
-                """
-            )
             conn.commit()
         logger.info("Database initialized successfully.")
     except Exception as e:
@@ -88,58 +70,20 @@ def insert_message(message: dict, db_path: pathlib.Path):
     try:
         with sqlite3.connect(str(db_path)) as conn:
             cursor = conn.cursor()
-            cursor.execute(
-                """
+            cursor.execute("""
                 INSERT INTO streamed_messages (
-                    message, author, timestamp, category, sentiment, keyword_mentioned, message_length
-                ) VALUES (?, ?, ?, ?, ?, ?, ?)
-                """,
-                (
-                    message["message"],
-                    message["author"],
-                    message["timestamp"],
-                    message["category"],
-                    message["sentiment"],
-                    message["keyword_mentioned"],
-                    message["message_length"],
-                ),
-            )
+                    message, author, timestamp, message_length
+                ) VALUES (?, ?, ?, ?)
+            """, (
+                message["message"],
+                message["author"],
+                message["timestamp"],
+                message["message_length"],
+            ))
             conn.commit()
         logger.info("Inserted message into database.")
     except Exception as e:
         logger.error(f"Failed to insert message: {e}")
-
-
-def update_sequence_table(db_path: pathlib.Path):
-    """
-    Compute average sentiment per category and update sequence table.
-    """
-    logger.debug("Updating sequence table with average sentiments per category.")
-    try:
-        with sqlite3.connect(str(db_path)) as conn:
-            cursor = conn.cursor()
-            cursor.execute(
-                """
-                SELECT category, AVG(sentiment) AS avg_sentiment
-                FROM streamed_messages
-                GROUP BY category
-                """
-            )
-            rows = cursor.fetchall()
-
-            cursor.execute("DELETE FROM sequence;")
-            for category, avg_sentiment in rows:
-                cursor.execute(
-                    """
-                    INSERT INTO sequence (category, avg_sentiment)
-                    VALUES (?, ?)
-                    """,
-                    (category, round(avg_sentiment, 3)),
-                )
-            conn.commit()
-        logger.info("Sequence table updated successfully.")
-    except Exception as e:
-        logger.error(f"Failed to update sequence table: {e}")
 
 
 def process_message(message: dict) -> dict:
@@ -152,9 +96,6 @@ def process_message(message: dict) -> dict:
             "message": message.get("message"),
             "author": message.get("author"),
             "timestamp": message.get("timestamp"),
-            "category": message.get("category"),
-            "sentiment": float(message.get("sentiment", 0.0)),
-            "keyword_mentioned": message.get("keyword_mentioned"),
             "message_length": int(message.get("message_length", 0)),
         }
         logger.debug(f"Processed message: {processed}")
@@ -163,6 +104,10 @@ def process_message(message: dict) -> dict:
         logger.error(f"Error processing message: {e}")
         return None
 
+
+#####################################
+# Kafka Consumption
+#####################################
 
 def consume_messages_from_kafka(
     topic: str,
@@ -190,7 +135,7 @@ def consume_messages_from_kafka(
         )
     except Exception as e:
         logger.error(f"Could not create Kafka consumer: {e}")
-        sys.exit(11)
+        sys.exit(12)
 
     try:
         is_topic_available(topic)
@@ -204,7 +149,6 @@ def consume_messages_from_kafka(
             processed = process_message(msg.value)
             if processed:
                 insert_message(processed, db_path)
-                update_sequence_table(db_path)  # update averages after each insert
     except KeyboardInterrupt:
         logger.warning("Consumer interrupted by user.")
     except Exception as e:
@@ -213,6 +157,10 @@ def consume_messages_from_kafka(
     finally:
         logger.info("Consumer shutting down.")
 
+
+#####################################
+# Main
+#####################################
 
 def main():
     logger.info("Starting Kafka consumer application.")
@@ -245,6 +193,10 @@ def main():
 
     consume_messages_from_kafka(topic, kafka_url, group_id, sqlite_path, interval_secs)
 
+
+#####################################
+# Conditional Execution
+#####################################
 
 if __name__ == "__main__":
     main()
