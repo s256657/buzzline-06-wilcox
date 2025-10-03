@@ -162,3 +162,5 @@ psycopg2
 # - Needed if DATABASE_TYPE=mysql.
 # Uncomment the line below to install PyMySQL.
 PyMySQL
+
+matplotlib

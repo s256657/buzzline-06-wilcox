@@ -1,242 +1,122 @@
-2025-10-02 15:03:53 | INFO | Logging to file: logs/project_log.log
-2025-10-02 15:03:53 | INFO | Log sanitization enabled, personal info removed
-2025-10-02 15:03:54 | INFO | Starting Producer to run continuously.
-2025-10-02 15:03:54 | INFO | Use Ctrl+C to stop.
-2025-10-02 15:03:54 | INFO | MESSAGE_INTERVAL_SECONDS: 5
-2025-10-02 15:03:54 | INFO | BUZZ_TOPIC: buzzline
-2025-10-02 15:03:54 | INFO | KAFKA_BROKER_ADDRESS: 127.0.0.1:9092
-2025-10-02 15:03:54 | INFO | BASE_DATA_DIR: /Users/USER/Projects/buzzline-06-wilcox/data
-2025-10-02 15:03:54 | INFO | LIVE_DATA_PATH: /Users/USER/Projects/buzzline-06-wilcox/data/project_live.json
-2025-10-02 15:03:54 | INFO | BASE_DATA_DIR: /Users/USER/Projects/buzzline-06-wilcox/data
-2025-10-02 15:03:54 | INFO | SQLITE_PATH: /Users/USER/Projects/buzzline-06-wilcox/data/buzz.sqlite
-2025-10-02 15:03:54 | INFO | Kafka broker address: localhost:9092
-2025-10-02 15:03:54 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'pGlhGFCmRQW3YpLSK7SXrA', 'controller_id': 1}
-2025-10-02 15:03:54 | INFO | Kafka producer connected to 127.0.0.1:9092
-2025-10-02 15:03:54 | INFO | Kafka broker address: localhost:9092
-2025-10-02 15:03:55 | INFO | Topic 'buzzline' already exists. Recreating fresh...
-2025-10-02 15:03:55 | INFO | Requested deletion of topic 'buzzline'.
-2025-10-02 15:03:55 | INFO | Topic 'buzzline' created successfully.
-2025-10-02 15:03:55 | INFO | Kafka topic 'buzzline' is ready.
-2025-10-02 15:03:55 | INFO | {'message': 'raiders gained 15 yards against browns with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:03:55', 'message_length': 50}
-2025-10-02 15:04:00 | INFO | {'message': 'steelers gained 22 yards against patriots with a pass.', 'author': 'system', 'timestamp': '2025-10-02 15:04:00', 'message_length': 54}
-2025-10-02 15:04:05 | INFO | {'message': 'texans gained 15 yards against raiders with a pass.', 'author': 'system', 'timestamp': '2025-10-02 15:04:05', 'message_length': 51}
-2025-10-02 15:04:10 | INFO | {'message': 'chiefs gained 10 yards against browns with a pass.', 'author': 'system', 'timestamp': '2025-10-02 15:04:10', 'message_length': 50}
-2025-10-02 15:04:15 | INFO | {'message': 'texans gained 23 yards against ravens with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:04:15', 'message_length': 49}
-2025-10-02 15:04:20 | INFO | {'message': 'ravens gained 26 yards against titans with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:04:20', 'message_length': 49}
-2025-10-02 15:04:25 | INFO | {'message': 'jaguars gained 13 yards against bengals with a pass.', 'author': 'system', 'timestamp': '2025-10-02 15:04:25', 'message_length': 52}
-2025-10-02 15:04:26 | INFO | Logging to file: logs/project_log.log
-2025-10-02 15:04:26 | INFO | Log sanitization enabled, personal info removed
-2025-10-02 15:04:26 | INFO | Starting Kafka consumer application.
-2025-10-02 15:04:26 | INFO | BUZZ_TOPIC: buzzline
-2025-10-02 15:04:26 | INFO | KAFKA_BROKER_ADDRESS: 127.0.0.1:9092
-2025-10-02 15:04:26 | INFO | BUZZ_CONSUMER_GROUP_ID: buzz_group
-2025-10-02 15:04:26 | INFO | MESSAGE_INTERVAL_SECONDS: 5
-2025-10-02 15:04:26 | INFO | BASE_DATA_DIR: /Users/USER/Projects/buzzline-06-wilcox/data
-2025-10-02 15:04:26 | INFO | SQLITE_PATH: /Users/USER/Projects/buzzline-06-wilcox/data/buzz.sqlite
-2025-10-02 15:04:26 | INFO | Environment variables read successfully.
-2025-10-02 15:04:26 | INFO | Initializing SQLite DB at /Users/USER/Projects/buzzline-06-wilcox/data/buzz.sqlite.
-2025-10-02 15:04:26 | INFO | Database initialized successfully.
-2025-10-02 15:04:26 | INFO | Starting Kafka consumer.
-2025-10-02 15:04:26 | INFO | Kafka broker address: localhost:9092
-2025-10-02 15:04:26 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'pGlhGFCmRQW3YpLSK7SXrA', 'controller_id': 1}
-2025-10-02 15:04:26 | INFO | Kafka broker address: localhost:9092
-2025-10-02 15:04:26 | INFO | Creating Kafka consumer. Topic='buzzline' and group ID='buzz_group'.
-2025-10-02 15:04:26 | INFO | Kafka consumer created successfully.
-2025-10-02 15:04:26 | INFO | Kafka broker address: localhost:9092
-2025-10-02 15:04:26 | INFO | Kafka topic 'buzzline' is ready.
-2025-10-02 15:04:30 | INFO | Inserted message into database.
-2025-10-02 15:04:30 | INFO | Inserted message into database.
-2025-10-02 15:04:30 | INFO | Inserted message into database.
-2025-10-02 15:04:30 | INFO | Inserted message into database.
-2025-10-02 15:04:30 | INFO | Inserted message into database.
-2025-10-02 15:04:30 | INFO | Inserted message into database.
-2025-10-02 15:04:30 | INFO | {'message': 'browns gained 23 yards against ravens with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:04:30', 'message_length': 49}
-2025-10-02 15:04:30 | INFO | Inserted message into database.
-2025-10-02 15:04:35 | INFO | {'message': 'colts gained 38 yards against broncos with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:04:35', 'message_length': 49}
-2025-10-02 15:04:35 | INFO | Inserted message into database.
-2025-10-02 15:04:40 | INFO | {'message': 'patriots gained 7 yards against ravens with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:04:40', 'message_length': 50}
-2025-10-02 15:04:40 | INFO | Inserted message into database.
-2025-10-02 15:04:45 | INFO | {'message': 'bengals gained 26 yards against chargers with a pass.', 'author': 'system', 'timestamp': '2025-10-02 15:04:45', 'message_length': 53}
-2025-10-02 15:04:45 | INFO | Inserted message into database.
-2025-10-02 15:04:50 | INFO | {'message': 'chiefs gained 16 yards against bills with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:04:50', 'message_length': 48}
-2025-10-02 15:04:50 | INFO | Inserted message into database.
-2025-10-02 15:04:55 | INFO | {'message': 'chargers gained 6 yards against browns with a pass.', 'author': 'system', 'timestamp': '2025-10-02 15:04:55', 'message_length': 51}
-2025-10-02 15:04:55 | INFO | Inserted message into database.
-2025-10-02 15:05:00 | INFO | {'message': 'chargers gained 5 yards against titans with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:05:00', 'message_length': 50}
-2025-10-02 15:05:00 | INFO | Inserted message into database.
-2025-10-02 15:05:05 | INFO | {'message': 'titans gained 19 yards against colts with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:05:05', 'message_length': 48}
-2025-10-02 15:05:05 | INFO | Inserted message into database.
-2025-10-02 15:05:10 | INFO | {'message': 'steelers gained 2 yards against ravens with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:05:10', 'message_length': 50}
-2025-10-02 15:05:10 | INFO | Inserted message into database.
-2025-10-02 15:05:15 | INFO | {'message': 'ravens gained 8 yards against bills with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:05:15', 'message_length': 47}
-2025-10-02 15:05:15 | INFO | Inserted message into database.
-2025-10-02 15:05:20 | INFO | {'message': 'patriots gained 19 yards against ravens with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:05:20', 'message_length': 51}
-2025-10-02 15:05:20 | INFO | Inserted message into database.
-2025-10-02 15:05:25 | INFO | {'message': 'titans gained 16 yards against dolphins with a pass.', 'author': 'system', 'timestamp': '2025-10-02 15:05:25', 'message_length': 52}
-2025-10-02 15:05:25 | INFO | Inserted message into database.
-2025-10-02 15:05:30 | INFO | {'message': 'steelers gained 20 yards against chargers with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:05:30', 'message_length': 53}
-2025-10-02 15:05:30 | INFO | Inserted message into database.
-2025-10-02 15:05:35 | INFO | {'message': 'bengals gained 20 yards against patriots with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:05:35', 'message_length': 52}
-2025-10-02 15:05:35 | INFO | Inserted message into database.
-2025-10-02 15:05:40 | INFO | {'message': 'browns gained 25 yards against texans with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:05:40', 'message_length': 49}
-2025-10-02 15:05:40 | INFO | Inserted message into database.
-2025-10-02 15:05:45 | INFO | {'message': 'steelers gained 40 yards against dolphins with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:05:45', 'message_length': 53}
-2025-10-02 15:05:45 | INFO | Inserted message into database.
-2025-10-02 15:05:50 | INFO | {'message': 'chargers gained 9 yards against browns with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:05:50', 'message_length': 50}
-2025-10-02 15:05:50 | INFO | Inserted message into database.
-2025-10-02 15:05:55 | INFO | {'message': 'colts gained 19 yards against browns with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:05:55', 'message_length': 48}
-2025-10-02 15:05:55 | INFO | Inserted message into database.
-2025-10-02 15:06:00 | INFO | {'message': 'texans gained 11 yards against patriots with a pass.', 'author': 'system', 'timestamp': '2025-10-02 15:06:00', 'message_length': 52}
-2025-10-02 15:06:00 | INFO | Inserted message into database.
-2025-10-02 15:06:05 | INFO | {'message': 'texans gained 25 yards against chargers with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:06:05', 'message_length': 51}
-2025-10-02 15:06:05 | INFO | Inserted message into database.
-2025-10-02 15:06:10 | INFO | {'message': 'chiefs gained 4 yards against raiders with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:06:10', 'message_length': 49}
-2025-10-02 15:06:10 | INFO | Inserted message into database.
-2025-10-02 15:06:15 | INFO | {'message': 'jaguars gained 14 yards against bengals with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:06:15', 'message_length': 51}
-2025-10-02 15:06:15 | INFO | Inserted message into database.
-2025-10-02 15:06:20 | INFO | {'message': 'texans gained 37 yards against ravens with a pass.', 'author': 'system', 'timestamp': '2025-10-02 15:06:20', 'message_length': 50}
-2025-10-02 15:06:20 | INFO | Inserted message into database.
-2025-10-02 15:06:25 | INFO | {'message': 'chiefs gained 3 yards against steelers with a pass.', 'author': 'system', 'timestamp': '2025-10-02 15:06:25', 'message_length': 51}
-2025-10-02 15:06:25 | INFO | Inserted message into database.
-2025-10-02 15:06:30 | INFO | {'message': 'jaguars gained 4 yards against jets with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:06:30', 'message_length': 47}
-2025-10-02 15:06:30 | INFO | Inserted message into database.
-2025-10-02 15:06:35 | INFO | {'message': 'jaguars gained 28 yards against dolphins with a pass.', 'author': 'system', 'timestamp': '2025-10-02 15:06:35', 'message_length': 53}
-2025-10-02 15:06:35 | INFO | Inserted message into database.
-2025-10-02 15:06:40 | INFO | {'message': 'chiefs gained 40 yards against colts with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:06:40', 'message_length': 48}
-2025-10-02 15:06:40 | INFO | Inserted message into database.
-2025-10-02 15:06:45 | INFO | {'message': 'ravens gained 3 yards against steelers with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:06:45', 'message_length': 50}
-2025-10-02 15:06:45 | INFO | Inserted message into database.
-2025-10-02 15:06:50 | INFO | {'message': 'texans gained 29 yards against bills with a run.', 'author': 'system', 'timestamp': '2025-10-02 15:06:50', 'message_length': 48}
-2025-10-02 15:06:50 | INFO | Inserted message into database.
-2025-10-02 15:06:55 | INFO | {'message': 'patriots gained 2 yards against jaguars with a pass.', 'author': 'system', 'timestamp': '2025-10-02 15:06:55', 'message_length': 52}
-2025-10-02 15:06:55 | INFO | Inserted message into database.
-2025-10-02 15:06:56 | WARNING | Producer interrupted by user.
-2025-10-02 15:06:56 | INFO | Kafka producer closed.
-2025-10-02 15:06:56 | INFO | Producer shutting down.
-2025-10-02 15:07:04 | WARNING | Consumer interrupted by user.
-2025-10-02 15:07:04 | INFO | Consumer shutting down.
-2025-10-02 16:20:31 | INFO | Logging to file: logs/project_log.log
-2025-10-02 16:20:31 | INFO | Log sanitization enabled, personal info removed
-2025-10-02 16:20:32 | INFO | Starting Producer to run continuously.
-2025-10-02 16:20:32 | INFO | Use Ctrl+C to stop.
-2025-10-02 16:20:32 | INFO | MESSAGE_INTERVAL_SECONDS: 5
-2025-10-02 16:20:32 | INFO | BUZZ_TOPIC: buzzline
-2025-10-02 16:20:32 | INFO | KAFKA_BROKER_ADDRESS: 127.0.0.1:9092
-2025-10-02 16:20:32 | INFO | BASE_DATA_DIR: /Users/USER/Projects/buzzline-06-wilcox/data
-2025-10-02 16:20:32 | INFO | LIVE_DATA_PATH: /Users/USER/Projects/buzzline-06-wilcox/data/project_live.json
-2025-10-02 16:20:32 | INFO | BASE_DATA_DIR: /Users/USER/Projects/buzzline-06-wilcox/data
-2025-10-02 16:20:32 | INFO | SQLITE_PATH: /Users/USER/Projects/buzzline-06-wilcox/data/buzz.sqlite
-2025-10-02 16:20:32 | INFO | Deleted existing live data file.
-2025-10-02 16:20:32 | INFO | Kafka broker address: localhost:9092
-2025-10-02 16:20:32 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'pGlhGFCmRQW3YpLSK7SXrA', 'controller_id': 1}
-2025-10-02 16:20:32 | INFO | Kafka producer connected to 127.0.0.1:9092
-2025-10-02 16:20:32 | INFO | Kafka broker address: localhost:9092
-2025-10-02 16:20:32 | INFO | Topic 'buzzline' already exists. Recreating fresh...
-2025-10-02 16:20:32 | INFO | Requested deletion of topic 'buzzline'.
-2025-10-02 16:20:32 | INFO | Topic 'buzzline' created successfully.
-2025-10-02 16:20:32 | INFO | Kafka topic 'buzzline' is ready.
-2025-10-02 16:20:32 | INFO | {'message': 'chiefs gained 25 yards against jaguars with a run.', 'author': 'system', 'timestamp': '2025-10-02 16:20:32', 'message_length': 50, 'team': 'chiefs', 'yards': 25, 'action': 'run'}
-2025-10-02 16:20:38 | INFO | {'message': 'browns gained 19 yards against chiefs with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:20:38', 'message_length': 50, 'team': 'browns', 'yards': 19, 'action': 'pass'}
-2025-10-02 16:20:43 | INFO | {'message': 'jets gained 27 yards against steelers with a run.', 'author': 'system', 'timestamp': '2025-10-02 16:20:43', 'message_length': 49, 'team': 'jets', 'yards': 27, 'action': 'run'}
-2025-10-02 16:20:48 | INFO | {'message': 'bengals gained 21 yards against titans with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:20:48', 'message_length': 51, 'team': 'bengals', 'yards': 21, 'action': 'pass'}
-2025-10-02 16:20:53 | INFO | {'message': 'raiders gained 20 yards against dolphins with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:20:53', 'message_length': 53, 'team': 'raiders', 'yards': 20, 'action': 'pass'}
-2025-10-02 16:20:58 | INFO | {'message': 'ravens gained 5 yards against texans with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:20:58', 'message_length': 49, 'team': 'ravens', 'yards': 5, 'action': 'pass'}
-2025-10-02 16:21:00 | INFO | Logging to file: logs/project_log.log
-2025-10-02 16:21:00 | INFO | Log sanitization enabled, personal info removed
-2025-10-02 16:21:00 | INFO | Starting Kafka consumer application.
-2025-10-02 16:21:00 | INFO | BUZZ_TOPIC: buzzline
-2025-10-02 16:21:00 | INFO | KAFKA_BROKER_ADDRESS: 127.0.0.1:9092
-2025-10-02 16:21:00 | INFO | BUZZ_CONSUMER_GROUP_ID: buzz_group
-2025-10-02 16:21:00 | INFO | MESSAGE_INTERVAL_SECONDS: 5
-2025-10-02 16:21:00 | INFO | BASE_DATA_DIR: /Users/USER/Projects/buzzline-06-wilcox/data
-2025-10-02 16:21:00 | INFO | SQLITE_PATH: /Users/USER/Projects/buzzline-06-wilcox/data/buzz.sqlite
-2025-10-02 16:21:00 | INFO | Environment variables read successfully.
-2025-10-02 16:21:00 | INFO | Deleted old SQLite DB file.
-2025-10-02 16:21:00 | INFO | Initializing SQLite DB at /Users/USER/Projects/buzzline-06-wilcox/data/buzz.sqlite.
-2025-10-02 16:21:00 | INFO | Database initialized successfully.
-2025-10-02 16:21:00 | INFO | Starting Kafka consumer.
-2025-10-02 16:21:00 | INFO | Kafka broker address: localhost:9092
-2025-10-02 16:21:00 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'pGlhGFCmRQW3YpLSK7SXrA', 'controller_id': 1}
-2025-10-02 16:21:00 | INFO | Kafka broker address: localhost:9092
-2025-10-02 16:21:00 | INFO | Creating Kafka consumer. Topic='buzzline' and group ID='buzz_group'.
-2025-10-02 16:21:00 | INFO | Kafka consumer created successfully.
-2025-10-02 16:21:00 | INFO | Kafka broker address: localhost:9092
-2025-10-02 16:21:00 | INFO | Kafka topic 'buzzline' is ready.
-2025-10-02 16:21:03 | INFO | {'message': 'texans gained 31 yards against patriots with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:21:03', 'message_length': 52, 'team': 'texans', 'yards': 31, 'action': 'pass'}
-2025-10-02 16:21:04 | INFO | Inserted message into database.
-2025-10-02 16:21:04 | INFO | Inserted message into database.
-2025-10-02 16:21:04 | INFO | Inserted message into database.
-2025-10-02 16:21:04 | INFO | Inserted message into database.
-2025-10-02 16:21:04 | INFO | Inserted message into database.
-2025-10-02 16:21:04 | INFO | Inserted message into database.
-2025-10-02 16:21:08 | INFO | {'message': 'bills gained 14 yards against chiefs with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:21:08', 'message_length': 49, 'team': 'bills', 'yards': 14, 'action': 'pass'}
-2025-10-02 16:21:08 | INFO | Inserted message into database.
-2025-10-02 16:21:13 | INFO | {'message': 'dolphins gained 20 yards against jets with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:21:13', 'message_length': 50, 'team': 'dolphins', 'yards': 20, 'action': 'pass'}
-2025-10-02 16:21:13 | INFO | Inserted message into database.
-2025-10-02 16:21:18 | INFO | {'message': 'jaguars gained 23 yards against steelers with a run.', 'author': 'system', 'timestamp': '2025-10-02 16:21:18', 'message_length': 52, 'team': 'jaguars', 'yards': 23, 'action': 'run'}
-2025-10-02 16:21:18 | INFO | Inserted message into database.
-2025-10-02 16:21:23 | INFO | {'message': 'titans gained 10 yards against ravens with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:21:23', 'message_length': 50, 'team': 'titans', 'yards': 10, 'action': 'pass'}
-2025-10-02 16:21:23 | INFO | Inserted message into database.
-2025-10-02 16:21:28 | INFO | {'message': 'broncos gained 2 yards against raiders with a run.', 'author': 'system', 'timestamp': '2025-10-02 16:21:28', 'message_length': 50, 'team': 'broncos', 'yards': 2, 'action': 'run'}
-2025-10-02 16:21:28 | INFO | Inserted message into database.
-2025-10-02 16:21:33 | INFO | {'message': 'chiefs gained 14 yards against patriots with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:21:33', 'message_length': 52, 'team': 'chiefs', 'yards': 14, 'action': 'pass'}
-2025-10-02 16:21:33 | INFO | Inserted message into database.
-2025-10-02 16:21:38 | INFO | {'message': 'chargers gained 12 yards against bengals with a run.', 'author': 'system', 'timestamp': '2025-10-02 16:21:38', 'message_length': 52, 'team': 'chargers', 'yards': 12, 'action': 'run'}
-2025-10-02 16:21:38 | INFO | Inserted message into database.
-2025-10-02 16:21:43 | INFO | {'message': 'titans gained 9 yards against jaguars with a run.', 'author': 'system', 'timestamp': '2025-10-02 16:21:43', 'message_length': 49, 'team': 'titans', 'yards': 9, 'action': 'run'}
-2025-10-02 16:21:43 | INFO | Inserted message into database.
-2025-10-02 16:21:48 | INFO | {'message': 'jets gained 25 yards against chiefs with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:21:48', 'message_length': 48, 'team': 'jets', 'yards': 25, 'action': 'pass'}
-2025-10-02 16:21:48 | INFO | Inserted message into database.
-2025-10-02 16:21:53 | INFO | {'message': 'jaguars gained 33 yards against steelers with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:21:53', 'message_length': 53, 'team': 'jaguars', 'yards': 33, 'action': 'pass'}
-2025-10-02 16:21:53 | INFO | Inserted message into database.
-2025-10-02 16:21:58 | INFO | {'message': 'colts gained 27 yards against texans with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:21:58', 'message_length': 49, 'team': 'colts', 'yards': 27, 'action': 'pass'}
-2025-10-02 16:21:58 | INFO | Inserted message into database.
-2025-10-02 16:22:03 | INFO | {'message': 'jaguars gained 22 yards against raiders with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:22:03', 'message_length': 52, 'team': 'jaguars', 'yards': 22, 'action': 'pass'}
-2025-10-02 16:22:03 | INFO | Inserted message into database.
-2025-10-02 16:22:08 | INFO | {'message': 'patriots gained 32 yards against dolphins with a run.', 'author': 'system', 'timestamp': '2025-10-02 16:22:08', 'message_length': 53, 'team': 'patriots', 'yards': 32, 'action': 'run'}
-2025-10-02 16:22:08 | INFO | Inserted message into database.
-2025-10-02 16:22:13 | INFO | {'message': 'raiders gained 3 yards against browns with a run.', 'author': 'system', 'timestamp': '2025-10-02 16:22:13', 'message_length': 49, 'team': 'raiders', 'yards': 3, 'action': 'run'}
-2025-10-02 16:22:13 | INFO | Inserted message into database.
-2025-10-02 16:22:18 | INFO | {'message': 'patriots gained 27 yards against bills with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:22:18', 'message_length': 51, 'team': 'patriots', 'yards': 27, 'action': 'pass'}
-2025-10-02 16:22:18 | INFO | Inserted message into database.
-2025-10-02 16:22:23 | INFO | {'message': 'titans gained 5 yards against chargers with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:22:23', 'message_length': 51, 'team': 'titans', 'yards': 5, 'action': 'pass'}
-2025-10-02 16:22:23 | INFO | Inserted message into database.
-2025-10-02 16:22:28 | INFO | {'message': 'ravens gained 11 yards against chiefs with a run.', 'author': 'system', 'timestamp': '2025-10-02 16:22:28', 'message_length': 49, 'team': 'ravens', 'yards': 11, 'action': 'run'}
-2025-10-02 16:22:28 | INFO | Inserted message into database.
-2025-10-02 16:22:33 | INFO | {'message': 'bengals gained 22 yards against raiders with a run.', 'author': 'system', 'timestamp': '2025-10-02 16:22:33', 'message_length': 51, 'team': 'bengals', 'yards': 22, 'action': 'run'}
-2025-10-02 16:22:33 | INFO | Inserted message into database.
-2025-10-02 16:22:38 | INFO | {'message': 'steelers gained 27 yards against chargers with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:22:38', 'message_length': 54, 'team': 'steelers', 'yards': 27, 'action': 'pass'}
-2025-10-02 16:22:38 | INFO | Inserted message into database.
-2025-10-02 16:22:43 | INFO | {'message': 'patriots gained 5 yards against texans with a run.', 'author': 'system', 'timestamp': '2025-10-02 16:22:43', 'message_length': 50, 'team': 'patriots', 'yards': 5, 'action': 'run'}
-2025-10-02 16:22:43 | INFO | Inserted message into database.
-2025-10-02 16:22:48 | INFO | {'message': 'chiefs gained 5 yards against broncos with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:22:48', 'message_length': 50, 'team': 'chiefs', 'yards': 5, 'action': 'pass'}
-2025-10-02 16:22:48 | INFO | Inserted message into database.
-2025-10-02 16:22:53 | INFO | {'message': 'titans gained 38 yards against ravens with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:22:53', 'message_length': 50, 'team': 'titans', 'yards': 38, 'action': 'pass'}
-2025-10-02 16:22:53 | INFO | Inserted message into database.
-2025-10-02 16:22:58 | INFO | {'message': 'bills gained 18 yards against ravens with a run.', 'author': 'system', 'timestamp': '2025-10-02 16:22:58', 'message_length': 48, 'team': 'bills', 'yards': 18, 'action': 'run'}
-2025-10-02 16:22:58 | INFO | Inserted message into database.
-2025-10-02 16:23:03 | INFO | {'message': 'broncos gained 33 yards against bills with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:23:03', 'message_length': 50, 'team': 'broncos', 'yards': 33, 'action': 'pass'}
-2025-10-02 16:23:03 | INFO | Inserted message into database.
-2025-10-02 16:23:08 | INFO | {'message': 'bengals gained 8 yards against raiders with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:23:08', 'message_length': 51, 'team': 'bengals', 'yards': 8, 'action': 'pass'}
-2025-10-02 16:23:08 | INFO | Inserted message into database.
-2025-10-02 16:23:13 | INFO | {'message': 'chargers gained 4 yards against ravens with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:23:13', 'message_length': 51, 'team': 'chargers', 'yards': 4, 'action': 'pass'}
-2025-10-02 16:23:13 | INFO | Inserted message into database.
-2025-10-02 16:23:18 | INFO | {'message': 'broncos gained 14 yards against chiefs with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:23:18', 'message_length': 51, 'team': 'broncos', 'yards': 14, 'action': 'pass'}
-2025-10-02 16:23:18 | INFO | Inserted message into database.
-2025-10-02 16:23:23 | INFO | {'message': 'chiefs gained 20 yards against patriots with a run.', 'author': 'system', 'timestamp': '2025-10-02 16:23:23', 'message_length': 51, 'team': 'chiefs', 'yards': 20, 'action': 'run'}
-2025-10-02 16:23:23 | INFO | Inserted message into database.
-2025-10-02 16:23:28 | INFO | {'message': 'steelers gained 25 yards against titans with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:23:28', 'message_length': 52, 'team': 'steelers', 'yards': 25, 'action': 'pass'}
-2025-10-02 16:23:28 | INFO | Inserted message into database.
-2025-10-02 16:23:33 | INFO | {'message': 'dolphins gained 23 yards against chargers with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:23:33', 'message_length': 54, 'team': 'dolphins', 'yards': 23, 'action': 'pass'}
-2025-10-02 16:23:33 | INFO | Inserted message into database.
-2025-10-02 16:23:38 | INFO | {'message': 'jets gained 14 yards against patriots with a run.', 'author': 'system', 'timestamp': '2025-10-02 16:23:38', 'message_length': 49, 'team': 'jets', 'yards': 14, 'action': 'run'}
-2025-10-02 16:23:38 | INFO | Inserted message into database.
-2025-10-02 16:23:43 | INFO | {'message': 'jets gained 27 yards against texans with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:23:43', 'message_length': 48, 'team': 'jets', 'yards': 27, 'action': 'pass'}
-2025-10-02 16:23:43 | INFO | Inserted message into database.
-2025-10-02 16:23:48 | INFO | {'message': 'bengals gained 16 yards against ravens with a pass.', 'author': 'system', 'timestamp': '2025-10-02 16:23:48', 'message_length': 51, 'team': 'bengals', 'yards': 16, 'action': 'pass'}
-2025-10-02 16:23:48 | INFO | Inserted message into database.
-2025-10-02 16:23:48 | WARNING | Producer interrupted by user.
-2025-10-02 16:23:48 | INFO | Kafka producer closed.
-2025-10-02 16:23:48 | INFO | Producer shutting down.
-2025-10-02 16:23:52 | WARNING | Consumer interrupted by user.
-2025-10-02 16:23:52 | INFO | Consumer shutting down.
+2025-10-03 15:28:14 | INFO | {'message': 'bengals gained 12 yards against chiefs with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:28:14', 'message_length': 50, 'team': 'bengals', 'yards': 12, 'action': 'run'}
+2025-10-03 15:28:19 | INFO | {'message': 'chargers gained 0 yards against browns with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:28:19', 'message_length': 51, 'team': 'chargers', 'yards': 0, 'action': 'pass'}
+2025-10-03 15:28:24 | INFO | {'message': 'bills gained 17 yards against titans with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:28:24', 'message_length': 48, 'team': 'bills', 'yards': 17, 'action': 'run'}
+2025-10-03 15:28:29 | INFO | {'message': 'bills gained 13 yards against chargers with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:28:29', 'message_length': 50, 'team': 'bills', 'yards': 13, 'action': 'run'}
+2025-10-03 15:28:34 | INFO | {'message': 'browns gained 7 yards against titans with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:28:34', 'message_length': 49, 'team': 'browns', 'yards': 7, 'action': 'pass'}
+2025-10-03 15:28:39 | INFO | {'message': 'bills gained 42 yards against chiefs with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:28:39', 'message_length': 48, 'team': 'bills', 'yards': 42, 'action': 'run'}
+2025-10-03 15:28:44 | INFO | {'message': 'steelers gained 4 yards against ravens with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:28:44', 'message_length': 50, 'team': 'steelers', 'yards': 4, 'action': 'run'}
+2025-10-03 15:28:49 | INFO | {'message': 'patriots gained 8 yards against chargers with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:28:49', 'message_length': 52, 'team': 'patriots', 'yards': 8, 'action': 'run'}
+2025-10-03 15:28:54 | INFO | {'message': 'bills gained 7 yards against dolphins with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:28:54', 'message_length': 50, 'team': 'bills', 'yards': 7, 'action': 'pass'}
+2025-10-03 15:28:59 | INFO | {'message': 'jets gained 21 yards against patriots with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:28:59', 'message_length': 49, 'team': 'jets', 'yards': 21, 'action': 'run'}
+2025-10-03 15:29:04 | INFO | {'message': 'raiders gained 21 yards against steelers with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:29:04', 'message_length': 53, 'team': 'raiders', 'yards': 21, 'action': 'pass'}
+2025-10-03 15:29:09 | INFO | {'message': 'chargers gained 14 yards against titans with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:29:09', 'message_length': 51, 'team': 'chargers', 'yards': 14, 'action': 'run'}
+2025-10-03 15:29:14 | INFO | {'message': 'texans gained 14 yards against bengals with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:29:14', 'message_length': 50, 'team': 'texans', 'yards': 14, 'action': 'run'}
+2025-10-03 15:29:19 | INFO | {'message': 'titans gained 2 yards against jets with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:29:19', 'message_length': 47, 'team': 'titans', 'yards': 2, 'action': 'pass'}
+2025-10-03 15:29:24 | INFO | {'message': 'jaguars gained 12 yards against chargers with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:29:24', 'message_length': 52, 'team': 'jaguars', 'yards': 12, 'action': 'run'}
+2025-10-03 15:29:29 | INFO | {'message': 'patriots gained 11 yards against dolphins with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:29:29', 'message_length': 54, 'team': 'patriots', 'yards': 11, 'action': 'pass'}
+2025-10-03 15:29:34 | INFO | {'message': 'bengals gained 3 yards against steelers with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:29:34', 'message_length': 52, 'team': 'bengals', 'yards': 3, 'action': 'pass'}
+2025-10-03 15:29:39 | INFO | {'message': 'jaguars gained -6 yards against steelers with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:29:39', 'message_length': 52, 'team': 'jaguars', 'yards': -6, 'action': 'run'}
+2025-10-03 15:29:44 | INFO | {'message': 'chiefs gained 17 yards against chargers with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:29:44', 'message_length': 51, 'team': 'chiefs', 'yards': 17, 'action': 'run'}
+2025-10-03 15:29:49 | INFO | {'message': 'jets gained 12 yards against colts with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:29:49', 'message_length': 46, 'team': 'jets', 'yards': 12, 'action': 'run'}
+2025-10-03 15:29:54 | INFO | {'message': 'dolphins gained 40 yards against bills with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:29:54', 'message_length': 51, 'team': 'dolphins', 'yards': 40, 'action': 'pass'}
+2025-10-03 15:29:59 | INFO | {'message': 'jets gained 21 yards against steelers with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:29:59', 'message_length': 49, 'team': 'jets', 'yards': 21, 'action': 'run'}
+2025-10-03 15:30:04 | INFO | {'message': 'raiders gained 14 yards against steelers with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:30:04', 'message_length': 53, 'team': 'raiders', 'yards': 14, 'action': 'pass'}
+2025-10-03 15:30:09 | INFO | {'message': 'ravens gained 13 yards against raiders with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:30:09', 'message_length': 50, 'team': 'ravens', 'yards': 13, 'action': 'run'}
+2025-10-03 15:30:14 | INFO | {'message': 'broncos gained 37 yards against steelers with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:30:14', 'message_length': 52, 'team': 'broncos', 'yards': 37, 'action': 'run'}
+2025-10-03 15:30:19 | INFO | {'message': 'steelers gained 14 yards against chiefs with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:30:19', 'message_length': 52, 'team': 'steelers', 'yards': 14, 'action': 'pass'}
+2025-10-03 15:30:24 | INFO | {'message': 'bills gained 32 yards against bengals with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:30:24', 'message_length': 49, 'team': 'bills', 'yards': 32, 'action': 'run'}
+2025-10-03 15:30:29 | INFO | {'message': 'steelers gained 30 yards against browns with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:30:29', 'message_length': 52, 'team': 'steelers', 'yards': 30, 'action': 'pass'}
+2025-10-03 15:30:34 | INFO | {'message': 'jets gained 8 yards against bills with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:30:34', 'message_length': 46, 'team': 'jets', 'yards': 8, 'action': 'pass'}
+2025-10-03 15:30:39 | INFO | {'message': 'chiefs gained 6 yards against broncos with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:30:39', 'message_length': 50, 'team': 'chiefs', 'yards': 6, 'action': 'pass'}
+2025-10-03 15:30:44 | INFO | {'message': 'browns gained 39 yards against steelers with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:30:44', 'message_length': 52, 'team': 'browns', 'yards': 39, 'action': 'pass'}
+2025-10-03 15:30:49 | INFO | {'message': 'colts gained 3 yards against browns with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:30:49', 'message_length': 48, 'team': 'colts', 'yards': 3, 'action': 'pass'}
+2025-10-03 15:30:54 | INFO | {'message': 'titans gained 20 yards against browns with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:30:54', 'message_length': 50, 'team': 'titans', 'yards': 20, 'action': 'pass'}
+2025-10-03 15:30:59 | INFO | {'message': 'ravens gained 19 yards against titans with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:30:59', 'message_length': 49, 'team': 'ravens', 'yards': 19, 'action': 'run'}
+2025-10-03 15:31:04 | INFO | {'message': 'colts gained 15 yards against chiefs with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:31:04', 'message_length': 48, 'team': 'colts', 'yards': 15, 'action': 'run'}
+2025-10-03 15:31:09 | INFO | {'message': 'ravens gained 41 yards against patriots with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:31:09', 'message_length': 52, 'team': 'ravens', 'yards': 41, 'action': 'pass'}
+2025-10-03 15:31:14 | INFO | {'message': 'chargers gained 15 yards against bills with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:31:14', 'message_length': 50, 'team': 'chargers', 'yards': 15, 'action': 'run'}
+2025-10-03 15:31:17 | INFO | Logging to file: logs/project_log.log
+2025-10-03 15:31:17 | INFO | Log sanitization enabled, personal info removed
+2025-10-03 15:31:17 | INFO | BUZZ_TOPIC: buzzline
+2025-10-03 15:31:17 | INFO | KAFKA_BROKER_ADDRESS: 127.0.0.1:9092
+2025-10-03 15:31:17 | INFO | BUZZ_CONSUMER_GROUP_ID: buzz_group
+2025-10-03 15:31:17 | INFO | Kafka topic: buzzline
+2025-10-03 15:31:17 | INFO | Kafka broker: 127.0.0.1:9092
+2025-10-03 15:31:17 | INFO | Kafka broker address: localhost:9092
+2025-10-03 15:31:17 | INFO | Creating Kafka consumer. Topic='buzzline' and group ID='buzz_group_visualizer'.
+2025-10-03 15:31:17 | INFO | Kafka consumer created successfully.
+2025-10-03 15:31:19 | INFO | {'message': 'dolphins gained 8 yards against patriots with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:31:19', 'message_length': 52, 'team': 'dolphins', 'yards': 8, 'action': 'run'}
+2025-10-03 15:31:24 | INFO | {'message': 'dolphins gained 37 yards against chargers with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:31:24', 'message_length': 53, 'team': 'dolphins', 'yards': 37, 'action': 'run'}
+2025-10-03 15:31:29 | INFO | {'message': 'bills gained 26 yards against ravens with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:31:29', 'message_length': 49, 'team': 'bills', 'yards': 26, 'action': 'pass'}
+2025-10-03 15:31:34 | INFO | {'message': 'bills gained -2 yards against colts with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:31:34', 'message_length': 47, 'team': 'bills', 'yards': -2, 'action': 'run'}
+2025-10-03 15:31:39 | INFO | {'message': 'patriots gained 25 yards against steelers with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:31:39', 'message_length': 53, 'team': 'patriots', 'yards': 25, 'action': 'run'}
+2025-10-03 15:31:44 | INFO | {'message': 'colts gained 5 yards against ravens with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:31:44', 'message_length': 48, 'team': 'colts', 'yards': 5, 'action': 'pass'}
+2025-10-03 15:31:49 | INFO | {'message': 'colts gained -3 yards against chargers with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:31:49', 'message_length': 51, 'team': 'colts', 'yards': -3, 'action': 'pass'}
+2025-10-03 15:31:54 | INFO | {'message': 'bengals gained 3 yards against chargers with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:31:54', 'message_length': 51, 'team': 'bengals', 'yards': 3, 'action': 'run'}
+2025-10-03 15:31:59 | INFO | {'message': 'texans gained 32 yards against bengals with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:31:59', 'message_length': 51, 'team': 'texans', 'yards': 32, 'action': 'pass'}
+2025-10-03 15:32:04 | INFO | {'message': 'chiefs gained 12 yards against ravens with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:32:04', 'message_length': 50, 'team': 'chiefs', 'yards': 12, 'action': 'pass'}
+2025-10-03 15:32:09 | INFO | {'message': 'dolphins gained 0 yards against titans with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:32:09', 'message_length': 50, 'team': 'dolphins', 'yards': 0, 'action': 'run'}
+2025-10-03 15:32:14 | INFO | {'message': 'colts gained 12 yards against broncos with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:32:14', 'message_length': 49, 'team': 'colts', 'yards': 12, 'action': 'run'}
+2025-10-03 15:32:19 | INFO | {'message': 'bills gained 22 yards against raiders with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:32:19', 'message_length': 49, 'team': 'bills', 'yards': 22, 'action': 'run'}
+2025-10-03 15:32:24 | INFO | {'message': 'jaguars gained 22 yards against bills with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:32:24', 'message_length': 50, 'team': 'jaguars', 'yards': 22, 'action': 'pass'}
+2025-10-03 15:32:29 | INFO | {'message': 'browns gained 1 yards against patriots with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:32:29', 'message_length': 51, 'team': 'browns', 'yards': 1, 'action': 'pass'}
+2025-10-03 15:32:34 | INFO | {'message': 'chiefs gained 33 yards against colts with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:32:34', 'message_length': 48, 'team': 'chiefs', 'yards': 33, 'action': 'run'}
+2025-10-03 15:32:39 | INFO | {'message': 'patriots gained 11 yards against titans with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:32:39', 'message_length': 52, 'team': 'patriots', 'yards': 11, 'action': 'pass'}
+2025-10-03 15:32:44 | INFO | {'message': 'dolphins gained 28 yards against texans with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:32:44', 'message_length': 52, 'team': 'dolphins', 'yards': 28, 'action': 'pass'}
+2025-10-03 15:32:49 | INFO | {'message': 'patriots gained 0 yards against colts with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:32:49', 'message_length': 49, 'team': 'patriots', 'yards': 0, 'action': 'run'}
+2025-10-03 15:32:54 | INFO | {'message': 'browns gained 19 yards against raiders with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:32:54', 'message_length': 50, 'team': 'browns', 'yards': 19, 'action': 'run'}
+2025-10-03 15:32:59 | INFO | {'message': 'browns gained -7 yards against titans with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:32:59', 'message_length': 50, 'team': 'browns', 'yards': -7, 'action': 'pass'}
+2025-10-03 15:33:04 | INFO | {'message': 'steelers gained 20 yards against patriots with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:33:04', 'message_length': 54, 'team': 'steelers', 'yards': 20, 'action': 'pass'}
+2025-10-03 15:33:09 | INFO | {'message': 'bills gained 9 yards against titans with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:33:09', 'message_length': 48, 'team': 'bills', 'yards': 9, 'action': 'pass'}
+2025-10-03 15:33:14 | INFO | {'message': 'browns gained 46 yards against dolphins with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:33:14', 'message_length': 51, 'team': 'browns', 'yards': 46, 'action': 'run'}
+2025-10-03 15:33:19 | INFO | {'message': 'ravens gained 41 yards against chiefs with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:33:19', 'message_length': 49, 'team': 'ravens', 'yards': 41, 'action': 'run'}
+2025-10-03 15:33:24 | INFO | {'message': 'bills gained 16 yards against bengals with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:33:24', 'message_length': 49, 'team': 'bills', 'yards': 16, 'action': 'run'}
+2025-10-03 15:33:29 | INFO | {'message': 'jaguars gained 20 yards against raiders with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:33:29', 'message_length': 52, 'team': 'jaguars', 'yards': 20, 'action': 'pass'}
+2025-10-03 15:33:34 | INFO | {'message': 'jaguars gained 9 yards against dolphins with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:33:34', 'message_length': 51, 'team': 'jaguars', 'yards': 9, 'action': 'run'}
+2025-10-03 15:33:39 | INFO | {'message': 'browns gained 4 yards against titans with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:33:39', 'message_length': 49, 'team': 'browns', 'yards': 4, 'action': 'pass'}
+2025-10-03 15:33:44 | INFO | {'message': 'chiefs gained 16 yards against colts with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:33:44', 'message_length': 49, 'team': 'chiefs', 'yards': 16, 'action': 'pass'}
+2025-10-03 15:33:49 | INFO | {'message': 'colts gained 21 yards against raiders with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:33:49', 'message_length': 49, 'team': 'colts', 'yards': 21, 'action': 'run'}
+2025-10-03 15:33:54 | INFO | {'message': 'titans gained 13 yards against raiders with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:33:54', 'message_length': 50, 'team': 'titans', 'yards': 13, 'action': 'run'}
+2025-10-03 15:33:59 | INFO | {'message': 'chiefs gained 35 yards against jaguars with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:33:59', 'message_length': 51, 'team': 'chiefs', 'yards': 35, 'action': 'pass'}
+2025-10-03 15:34:04 | INFO | {'message': 'dolphins gained -2 yards against steelers with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:34:04', 'message_length': 54, 'team': 'dolphins', 'yards': -2, 'action': 'pass'}
+2025-10-03 15:34:09 | INFO | {'message': 'browns gained 15 yards against jaguars with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:34:09', 'message_length': 50, 'team': 'browns', 'yards': 15, 'action': 'run'}
+2025-10-03 15:34:14 | INFO | {'message': 'colts gained 6 yards against bengals with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:34:14', 'message_length': 48, 'team': 'colts', 'yards': 6, 'action': 'run'}
+2025-10-03 15:34:19 | INFO | {'message': 'raiders gained 21 yards against chargers with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:34:19', 'message_length': 53, 'team': 'raiders', 'yards': 21, 'action': 'pass'}
+2025-10-03 15:34:24 | INFO | {'message': 'bengals gained 41 yards against broncos with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:34:24', 'message_length': 52, 'team': 'bengals', 'yards': 41, 'action': 'pass'}
+2025-10-03 15:34:29 | INFO | {'message': 'titans gained 3 yards against bills with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:34:29', 'message_length': 48, 'team': 'titans', 'yards': 3, 'action': 'pass'}
+2025-10-03 15:34:34 | INFO | {'message': 'titans gained 14 yards against ravens with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:34:34', 'message_length': 49, 'team': 'titans', 'yards': 14, 'action': 'run'}
+2025-10-03 15:34:39 | INFO | {'message': 'steelers gained 8 yards against ravens with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:34:39', 'message_length': 50, 'team': 'steelers', 'yards': 8, 'action': 'run'}
+2025-10-03 15:34:44 | INFO | {'message': 'raiders gained 10 yards against broncos with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:34:44', 'message_length': 51, 'team': 'raiders', 'yards': 10, 'action': 'run'}
+2025-10-03 15:34:49 | INFO | {'message': 'ravens gained 17 yards against bengals with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:34:49', 'message_length': 50, 'team': 'ravens', 'yards': 17, 'action': 'run'}
+2025-10-03 15:34:54 | INFO | {'message': 'titans gained 17 yards against chargers with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:34:54', 'message_length': 51, 'team': 'titans', 'yards': 17, 'action': 'run'}
+2025-10-03 15:34:59 | INFO | {'message': 'bengals gained 11 yards against patriots with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:34:59', 'message_length': 52, 'team': 'bengals', 'yards': 11, 'action': 'run'}
+2025-10-03 15:35:04 | INFO | {'message': 'broncos gained 15 yards against jaguars with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:35:04', 'message_length': 51, 'team': 'broncos', 'yards': 15, 'action': 'run'}
+2025-10-03 15:35:09 | INFO | {'message': 'bills gained 6 yards against chiefs with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:35:09', 'message_length': 47, 'team': 'bills', 'yards': 6, 'action': 'run'}
+2025-10-03 15:35:14 | INFO | {'message': 'jaguars gained -6 yards against steelers with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:35:14', 'message_length': 52, 'team': 'jaguars', 'yards': -6, 'action': 'run'}
+2025-10-03 15:35:19 | INFO | {'message': 'raiders gained 4 yards against steelers with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:35:19', 'message_length': 52, 'team': 'raiders', 'yards': 4, 'action': 'pass'}
+2025-10-03 15:35:24 | INFO | {'message': 'raiders gained 0 yards against chargers with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:35:24', 'message_length': 52, 'team': 'raiders', 'yards': 0, 'action': 'pass'}
+2025-10-03 15:35:29 | INFO | {'message': 'chargers gained 6 yards against bills with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:35:29', 'message_length': 49, 'team': 'chargers', 'yards': 6, 'action': 'run'}
+2025-10-03 15:35:34 | INFO | {'message': 'ravens gained 21 yards against bengals with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:35:34', 'message_length': 51, 'team': 'ravens', 'yards': 21, 'action': 'pass'}
+2025-10-03 15:35:39 | INFO | {'message': 'steelers gained 19 yards against raiders with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:35:39', 'message_length': 52, 'team': 'steelers', 'yards': 19, 'action': 'run'}
+2025-10-03 15:35:44 | INFO | {'message': 'raiders gained 27 yards against bengals with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:35:44', 'message_length': 52, 'team': 'raiders', 'yards': 27, 'action': 'pass'}
+2025-10-03 15:35:49 | INFO | {'message': 'patriots gained 21 yards against broncos with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:35:49', 'message_length': 53, 'team': 'patriots', 'yards': 21, 'action': 'pass'}
+2025-10-03 15:35:54 | INFO | {'message': 'chargers gained 1 yards against jaguars with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:35:54', 'message_length': 51, 'team': 'chargers', 'yards': 1, 'action': 'run'}
+2025-10-03 15:35:59 | INFO | {'message': 'jets gained 7 yards against browns with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:35:59', 'message_length': 47, 'team': 'jets', 'yards': 7, 'action': 'pass'}
+2025-10-03 15:36:04 | INFO | {'message': 'texans gained 5 yards against chargers with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:36:04', 'message_length': 51, 'team': 'texans', 'yards': 5, 'action': 'pass'}
+2025-10-03 15:36:09 | INFO | {'message': 'browns gained 1 yards against ravens with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:36:09', 'message_length': 48, 'team': 'browns', 'yards': 1, 'action': 'run'}
+2025-10-03 15:36:14 | INFO | {'message': 'broncos gained 25 yards against bills with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:36:14', 'message_length': 50, 'team': 'broncos', 'yards': 25, 'action': 'pass'}
+2025-10-03 15:36:19 | INFO | {'message': 'texans gained 6 yards against ravens with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:36:19', 'message_length': 48, 'team': 'texans', 'yards': 6, 'action': 'run'}
+2025-10-03 15:36:24 | INFO | {'message': 'titans gained 31 yards against broncos with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:36:24', 'message_length': 51, 'team': 'titans', 'yards': 31, 'action': 'pass'}
+2025-10-03 15:36:29 | INFO | {'message': 'patriots gained 28 yards against chargers with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:36:29', 'message_length': 54, 'team': 'patriots', 'yards': 28, 'action': 'pass'}
+2025-10-03 15:36:34 | INFO | {'message': 'titans gained 9 yards against chiefs with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:36:34', 'message_length': 49, 'team': 'titans', 'yards': 9, 'action': 'pass'}
+2025-10-03 15:36:39 | INFO | {'message': 'texans gained 22 yards against bills with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:36:39', 'message_length': 49, 'team': 'texans', 'yards': 22, 'action': 'pass'}
+2025-10-03 15:36:44 | INFO | {'message': 'dolphins gained 35 yards against bills with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:36:44', 'message_length': 50, 'team': 'dolphins', 'yards': 35, 'action': 'run'}
+2025-10-03 15:36:49 | INFO | {'message': 'broncos gained 7 yards against steelers with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:36:49', 'message_length': 52, 'team': 'broncos', 'yards': 7, 'action': 'pass'}
+2025-10-03 15:36:54 | INFO | {'message': 'texans gained 28 yards against titans with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:36:54', 'message_length': 49, 'team': 'texans', 'yards': 28, 'action': 'run'}
+2025-10-03 15:36:59 | INFO | {'message': 'colts gained 2 yards against chargers with a pass.', 'author': 'system', 'timestamp': '2025-10-03 15:36:59', 'message_length': 50, 'team': 'colts', 'yards': 2, 'action': 'pass'}
+2025-10-03 15:37:04 | INFO | {'message': 'colts gained 13 yards against browns with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:37:04', 'message_length': 48, 'team': 'colts', 'yards': 13, 'action': 'run'}
+2025-10-03 15:37:09 | INFO | {'message': 'bengals gained 0 yards against ravens with a run.', 'author': 'system', 'timestamp': '2025-10-03 15:37:09', 'message_length': 49, 'team': 'bengals', 'yards': 0, 'action': 'run'}
+2025-10-03 15:37:14 | WARNING | Producer interrupted by user.
+2025-10-03 15:37:14 | INFO | Kafka producer closed.
+2025-10-03 15:37:14 | INFO | Producer shutting down.
+2025-10-03 15:48:33 | WARNING | Visualization interrupted by user.

@@ -62,7 +62,7 @@ def generate_messages():
     while True:
         offense = random.choice(TEAMS)
         action = random.choice(ACTIONS)
-        yards = int(random.triangular(low=1, high=50, mode=5))  # Biased toward lower yardage
+        yards = int(random.triangular(low=-10, high=50, mode=5))  # Biased toward lower yardage
         defense = random.choice([team for team in TEAMS if team != offense])
 
         message_text = f"{offense} gained {yards} yards against {defense} with a {action}."
