@@ -1,37 +1,40 @@
-{"message": "raiders gained 15 yards against browns with a run.", "author": "system", "timestamp": "2025-10-02 15:03:55", "message_length": 50}
-{"message": "steelers gained 22 yards against patriots with a pass.", "author": "system", "timestamp": "2025-10-02 15:04:00", "message_length": 54}
-{"message": "texans gained 15 yards against raiders with a pass.", "author": "system", "timestamp": "2025-10-02 15:04:05", "message_length": 51}
-{"message": "chiefs gained 10 yards against browns with a pass.", "author": "system", "timestamp": "2025-10-02 15:04:10", "message_length": 50}
-{"message": "texans gained 23 yards against ravens with a run.", "author": "system", "timestamp": "2025-10-02 15:04:15", "message_length": 49}
-{"message": "ravens gained 26 yards against titans with a run.", "author": "system", "timestamp": "2025-10-02 15:04:20", "message_length": 49}
-{"message": "jaguars gained 13 yards against bengals with a pass.", "author": "system", "timestamp": "2025-10-02 15:04:25", "message_length": 52}
-{"message": "browns gained 23 yards against ravens with a run.", "author": "system", "timestamp": "2025-10-02 15:04:30", "message_length": 49}
-{"message": "colts gained 38 yards against broncos with a run.", "author": "system", "timestamp": "2025-10-02 15:04:35", "message_length": 49}
-{"message": "patriots gained 7 yards against ravens with a run.", "author": "system", "timestamp": "2025-10-02 15:04:40", "message_length": 50}
-{"message": "bengals gained 26 yards against chargers with a pass.", "author": "system", "timestamp": "2025-10-02 15:04:45", "message_length": 53}
-{"message": "chiefs gained 16 yards against bills with a run.", "author": "system", "timestamp": "2025-10-02 15:04:50", "message_length": 48}
-{"message": "chargers gained 6 yards against browns with a pass.", "author": "system", "timestamp": "2025-10-02 15:04:55", "message_length": 51}
-{"message": "chargers gained 5 yards against titans with a run.", "author": "system", "timestamp": "2025-10-02 15:05:00", "message_length": 50}
-{"message": "titans gained 19 yards against colts with a run.", "author": "system", "timestamp": "2025-10-02 15:05:05", "message_length": 48}
-{"message": "steelers gained 2 yards against ravens with a run.", "author": "system", "timestamp": "2025-10-02 15:05:10", "message_length": 50}
-{"message": "ravens gained 8 yards against bills with a run.", "author": "system", "timestamp": "2025-10-02 15:05:15", "message_length": 47}
-{"message": "patriots gained 19 yards against ravens with a run.", "author": "system", "timestamp": "2025-10-02 15:05:20", "message_length": 51}
-{"message": "titans gained 16 yards against dolphins with a pass.", "author": "system", "timestamp": "2025-10-02 15:05:25", "message_length": 52}
-{"message": "steelers gained 20 yards against chargers with a run.", "author": "system", "timestamp": "2025-10-02 15:05:30", "message_length": 53}
-{"message": "bengals gained 20 yards against patriots with a run.", "author": "system", "timestamp": "2025-10-02 15:05:35", "message_length": 52}
-{"message": "browns gained 25 yards against texans with a run.", "author": "system", "timestamp": "2025-10-02 15:05:40", "message_length": 49}
-{"message": "steelers gained 40 yards against dolphins with a run.", "author": "system", "timestamp": "2025-10-02 15:05:45", "message_length": 53}
-{"message": "chargers gained 9 yards against browns with a run.", "author": "system", "timestamp": "2025-10-02 15:05:50", "message_length": 50}
-{"message": "colts gained 19 yards against browns with a run.", "author": "system", "timestamp": "2025-10-02 15:05:55", "message_length": 48}
-{"message": "texans gained 11 yards against patriots with a pass.", "author": "system", "timestamp": "2025-10-02 15:06:00", "message_length": 52}
-{"message": "texans gained 25 yards against chargers with a run.", "author": "system", "timestamp": "2025-10-02 15:06:05", "message_length": 51}
-{"message": "chiefs gained 4 yards against raiders with a run.", "author": "system", "timestamp": "2025-10-02 15:06:10", "message_length": 49}
-{"message": "jaguars gained 14 yards against bengals with a run.", "author": "system", "timestamp": "2025-10-02 15:06:15", "message_length": 51}
-{"message": "texans gained 37 yards against ravens with a pass.", "author": "system", "timestamp": "2025-10-02 15:06:20", "message_length": 50}
-{"message": "chiefs gained 3 yards against steelers with a pass.", "author": "system", "timestamp": "2025-10-02 15:06:25", "message_length": 51}
-{"message": "jaguars gained 4 yards against jets with a run.", "author": "system", "timestamp": "2025-10-02 15:06:30", "message_length": 47}
-{"message": "jaguars gained 28 yards against dolphins with a pass.", "author": "system", "timestamp": "2025-10-02 15:06:35", "message_length": 53}
-{"message": "chiefs gained 40 yards against colts with a run.", "author": "system", "timestamp": "2025-10-02 15:06:40", "message_length": 48}
-{"message": "ravens gained 3 yards against steelers with a run.", "author": "system", "timestamp": "2025-10-02 15:06:45", "message_length": 50}
-{"message": "texans gained 29 yards against bills with a run.", "author": "system", "timestamp": "2025-10-02 15:06:50", "message_length": 48}
-{"message": "patriots gained 2 yards against jaguars with a pass.", "author": "system", "timestamp": "2025-10-02 15:06:55", "message_length": 52}
+{"message": "chiefs gained 25 yards against jaguars with a run.", "author": "system", "timestamp": "2025-10-02 16:20:32", "message_length": 50, "team": "chiefs", "yards": 25, "action": "run"}
+{"message": "browns gained 19 yards against chiefs with a pass.", "author": "system", "timestamp": "2025-10-02 16:20:38", "message_length": 50, "team": "browns", "yards": 19, "action": "pass"}
+{"message": "jets gained 27 yards against steelers with a run.", "author": "system", "timestamp": "2025-10-02 16:20:43", "message_length": 49, "team": "jets", "yards": 27, "action": "run"}
+{"message": "bengals gained 21 yards against titans with a pass.", "author": "system", "timestamp": "2025-10-02 16:20:48", "message_length": 51, "team": "bengals", "yards": 21, "action": "pass"}
+{"message": "raiders gained 20 yards against dolphins with a pass.", "author": "system", "timestamp": "2025-10-02 16:20:53", "message_length": 53, "team": "raiders", "yards": 20, "action": "pass"}
+{"message": "ravens gained 5 yards against texans with a pass.", "author": "system", "timestamp": "2025-10-02 16:20:58", "message_length": 49, "team": "ravens", "yards": 5, "action": "pass"}
+{"message": "texans gained 31 yards against patriots with a pass.", "author": "system", "timestamp": "2025-10-02 16:21:03", "message_length": 52, "team": "texans", "yards": 31, "action": "pass"}
+{"message": "bills gained 14 yards against chiefs with a pass.", "author": "system", "timestamp": "2025-10-02 16:21:08", "message_length": 49, "team": "bills", "yards": 14, "action": "pass"}
+{"message": "dolphins gained 20 yards against jets with a pass.", "author": "system", "timestamp": "2025-10-02 16:21:13", "message_length": 50, "team": "dolphins", "yards": 20, "action": "pass"}
+{"message": "jaguars gained 23 yards against steelers with a run.", "author": "system", "timestamp": "2025-10-02 16:21:18", "message_length": 52, "team": "jaguars", "yards": 23, "action": "run"}
+{"message": "titans gained 10 yards against ravens with a pass.", "author": "system", "timestamp": "2025-10-02 16:21:23", "message_length": 50, "team": "titans", "yards": 10, "action": "pass"}
+{"message": "broncos gained 2 yards against raiders with a run.", "author": "system", "timestamp": "2025-10-02 16:21:28", "message_length": 50, "team": "broncos", "yards": 2, "action": "run"}
+{"message": "chiefs gained 14 yards against patriots with a pass.", "author": "system", "timestamp": "2025-10-02 16:21:33", "message_length": 52, "team": "chiefs", "yards": 14, "action": "pass"}
+{"message": "chargers gained 12 yards against bengals with a run.", "author": "system", "timestamp": "2025-10-02 16:21:38", "message_length": 52, "team": "chargers", "yards": 12, "action": "run"}
+{"message": "titans gained 9 yards against jaguars with a run.", "author": "system", "timestamp": "2025-10-02 16:21:43", "message_length": 49, "team": "titans", "yards": 9, "action": "run"}
+{"message": "jets gained 25 yards against chiefs with a pass.", "author": "system", "timestamp": "2025-10-02 16:21:48", "message_length": 48, "team": "jets", "yards": 25, "action": "pass"}
+{"message": "jaguars gained 33 yards against steelers with a pass.", "author": "system", "timestamp": "2025-10-02 16:21:53", "message_length": 53, "team": "jaguars", "yards": 33, "action": "pass"}
+{"message": "colts gained 27 yards against texans with a pass.", "author": "system", "timestamp": "2025-10-02 16:21:58", "message_length": 49, "team": "colts", "yards": 27, "action": "pass"}
+{"message": "jaguars gained 22 yards against raiders with a pass.", "author": "system", "timestamp": "2025-10-02 16:22:03", "message_length": 52, "team": "jaguars", "yards": 22, "action": "pass"}
+{"message": "patriots gained 32 yards against dolphins with a run.", "author": "system", "timestamp": "2025-10-02 16:22:08", "message_length": 53, "team": "patriots", "yards": 32, "action": "run"}
+{"message": "raiders gained 3 yards against browns with a run.", "author": "system", "timestamp": "2025-10-02 16:22:13", "message_length": 49, "team": "raiders", "yards": 3, "action": "run"}
+{"message": "patriots gained 27 yards against bills with a pass.", "author": "system", "timestamp": "2025-10-02 16:22:18", "message_length": 51, "team": "patriots", "yards": 27, "action": "pass"}
+{"message": "titans gained 5 yards against chargers with a pass.", "author": "system", "timestamp": "2025-10-02 16:22:23", "message_length": 51, "team": "titans", "yards": 5, "action": "pass"}
+{"message": "ravens gained 11 yards against chiefs with a run.", "author": "system", "timestamp": "2025-10-02 16:22:28", "message_length": 49, "team": "ravens", "yards": 11, "action": "run"}
+{"message": "bengals gained 22 yards against raiders with a run.", "author": "system", "timestamp": "2025-10-02 16:22:33", "message_length": 51, "team": "bengals", "yards": 22, "action": "run"}
+{"message": "steelers gained 27 yards against chargers with a pass.", "author": "system", "timestamp": "2025-10-02 16:22:38", "message_length": 54, "team": "steelers", "yards": 27, "action": "pass"}
+{"message": "patriots gained 5 yards against texans with a run.", "author": "system", "timestamp": "2025-10-02 16:22:43", "message_length": 50, "team": "patriots", "yards": 5, "action": "run"}
+{"message": "chiefs gained 5 yards against broncos with a pass.", "author": "system", "timestamp": "2025-10-02 16:22:48", "message_length": 50, "team": "chiefs", "yards": 5, "action": "pass"}
+{"message": "titans gained 38 yards against ravens with a pass.", "author": "system", "timestamp": "2025-10-02 16:22:53", "message_length": 50, "team": "titans", "yards": 38, "action": "pass"}
+{"message": "bills gained 18 yards against ravens with a run.", "author": "system", "timestamp": "2025-10-02 16:22:58", "message_length": 48, "team": "bills", "yards": 18, "action": "run"}
+{"message": "broncos gained 33 yards against bills with a pass.", "author": "system", "timestamp": "2025-10-02 16:23:03", "message_length": 50, "team": "broncos", "yards": 33, "action": "pass"}
+{"message": "bengals gained 8 yards against raiders with a pass.", "author": "system", "timestamp": "2025-10-02 16:23:08", "message_length": 51, "team": "bengals", "yards": 8, "action": "pass"}
+{"message": "chargers gained 4 yards against ravens with a pass.", "author": "system", "timestamp": "2025-10-02 16:23:13", "message_length": 51, "team": "chargers", "yards": 4, "action": "pass"}
+{"message": "broncos gained 14 yards against chiefs with a pass.", "author": "system", "timestamp": "2025-10-02 16:23:18", "message_length": 51, "team": "broncos", "yards": 14, "action": "pass"}
+{"message": "chiefs gained 20 yards against patriots with a run.", "author": "system", "timestamp": "2025-10-02 16:23:23", "message_length": 51, "team": "chiefs", "yards": 20, "action": "run"}
+{"message": "steelers gained 25 yards against titans with a pass.", "author": "system", "timestamp": "2025-10-02 16:23:28", "message_length": 52, "team": "steelers", "yards": 25, "action": "pass"}
+{"message": "dolphins gained 23 yards against chargers with a pass.", "author": "system", "timestamp": "2025-10-02 16:23:33", "message_length": 54, "team": "dolphins", "yards": 23, "action": "pass"}
+{"message": "jets gained 14 yards against patriots with a run.", "author": "system", "timestamp": "2025-10-02 16:23:38", "message_length": 49, "team": "jets", "yards": 14, "action": "run"}
+{"message": "jets gained 27 yards against texans with a pass.", "author": "system", "timestamp": "2025-10-02 16:23:43", "message_length": 48, "team": "jets", "yards": 27, "action": "pass"}
+{"message": "bengals gained 16 yards against ravens with a pass.", "author": "system", "timestamp": "2025-10-02 16:23:48", "message_length": 51, "team": "bengals", "yards": 16, "action": "pass"}

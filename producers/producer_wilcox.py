@@ -73,6 +73,9 @@ def generate_messages():
             "author": "system",
             "timestamp": timestamp,
             "message_length": len(message_text),
+            "team": offense,
+            "yards": yards,
+            "action": action,
         }
 
 

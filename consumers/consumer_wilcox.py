@@ -2,12 +2,16 @@
 consumer_wilcox.py
 
 Consumes messages from a Kafka topic and stores them in a SQLite database.
+
 Expected message format:
 {
     "message": "chiefs gained 7 yards against broncos with a run.",
     "author": "system",
     "timestamp": "2025-10-02 18:45:00",
-    "message_length": 54
+    "message_length": 54,
+    "team": "chiefs",
+    "yards": 7,
+    "action": "run"
 }
 """
 
@@ -51,7 +55,10 @@ def init_db(db_path: pathlib.Path):
                     message TEXT,
                     author TEXT,
                     timestamp TEXT,
-                    message_length INTEGER
+                    message_length INTEGER,
+                    team TEXT,
+                    yards INTEGER,
+                    action TEXT
                 )
             """)
 
@@ -72,13 +79,16 @@ def insert_message(message: dict, db_path: pathlib.Path):
             cursor = conn.cursor()
             cursor.execute("""
                 INSERT INTO streamed_messages (
-                    message, author, timestamp, message_length
-                ) VALUES (?, ?, ?, ?)
+                    message, author, timestamp, message_length, team, yards, action
+                ) VALUES (?, ?, ?, ?, ?, ?, ?)
             """, (
                 message["message"],
                 message["author"],
                 message["timestamp"],
                 message["message_length"],
+                message["team"],
+                message["yards"],
+                message["action"]
             ))
             conn.commit()
         logger.info("Inserted message into database.")
@@ -97,6 +107,9 @@ def process_message(message: dict) -> dict:
             "author": message.get("author"),
             "timestamp": message.get("timestamp"),
             "message_length": int(message.get("message_length", 0)),
+            "team": message.get("team"),
+            "yards": int(message.get("yards", 0)),
+            "action": message.get("action")
         }
         logger.debug(f"Processed message: {processed}")
         return processed
