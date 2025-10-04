@@ -42,3 +42,6 @@ python3 -m consumers.visualization_wilcox
 
 ## Visualization description
 The visualization that displays is a snapshot of efficiency where the x-axis is the average yards gained where and the y-axis is the pass percentage. The hope is to draw a correlation on average yards gained is higher based on pass percentage.
+
+
+![Example of visualization](images/image.png)
