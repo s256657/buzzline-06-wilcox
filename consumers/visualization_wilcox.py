@@ -8,8 +8,6 @@ Each point on the plot represents a team:
 """
 
 import json
-import sqlite3
-import pathlib
 import matplotlib.pyplot as plt
 from collections import defaultdict
 from kafka import KafkaConsumer
@@ -59,13 +57,29 @@ def plot_live(ax):
     ax.set_xlim(-10, 50)
     ax.set_ylim(0, 1)
 
+    ax.grid(True, linestyle="--", alpha=0.5)
+
+    # Optional: Visual zones/quadrants (comment out if not needed)
     ax.axhline(0.5, color="gray", linestyle="--", linewidth=1)
     ax.axvline(5, color="gray", linestyle="--", linewidth=1)
+    ax.axhspan(0.5, 1.0, facecolor='lightyellow', alpha=0.2)
+    ax.axvspan(5, 50, facecolor='lightblue', alpha=0.1)
 
-    ax.scatter(x, y, color="blue")
+    # Plot points
+    ax.scatter(x, y, color="blue", s=100, edgecolors="black", alpha=0.8)
 
+    # Enhanced annotations
     for i, label in enumerate(labels):
-        ax.annotate(label, (x[i], y[i]), textcoords="offset points", xytext=(0, 5), ha='center')
+        ax.annotate(
+            label,
+            (x[i], y[i]),
+            textcoords="offset points",
+            xytext=(8, 8 if i % 2 == 0 else -12),  # Alternate offsets to avoid overlap
+            ha='left',
+            fontsize=8,
+            bbox=dict(boxstyle="round,pad=0.3", fc="white", alpha=0.9, ec="gray"),
+            arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=0.2", color="gray", lw=0.8)
+        )
 
     plt.pause(0.01)
 
@@ -78,14 +92,12 @@ def consume_and_visualize():
     logger.info(f"Kafka topic: {topic}")
     logger.info(f"Kafka broker: {kafka_url}")
 
-    # Create consumer — fix argument names if needed
     consumer = create_kafka_consumer(
         topic_provided=topic,
         group_id_provided=group_id + "_visualizer",
         value_deserializer_provided=lambda x: json.loads(x.decode("utf-8")),
     )
 
-    # Set up live plot
     plt.ion()
     fig, ax = plt.subplots(figsize=(10, 6))
 
